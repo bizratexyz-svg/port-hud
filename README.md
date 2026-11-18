@@ -1,5 +1,8 @@
 # port-hud
 
+[![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 A lightweight, zero-dependency CLI & Cyberpunk Floating HUD for inspecting and killing listening local TCP ports.
 
 ## Features
@@ -34,6 +37,17 @@ port-hud --kill 3000 --force -y
 
 # Launch the Cyberpunk Floating HUD
 port-hud --overlay
+```
+
+## Example Output
+
+```text
+$ port-hud
+PORT  PID    PROCESS   ADDRESS
+----  -----  --------  ---------
+3000  12345  node      127.0.0.1
+5432  4321   postgres  *
+8000  9999   python3   [::1]
 ```
 
 ## Requirements
